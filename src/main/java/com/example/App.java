@@ -20,6 +20,18 @@ public class App
     			"Tamara","Jessica","Carlos","Adrian","Maria Lopez","Maria Jose","Rosa","Pablo","Ivan","Marly"
     	};
     	
+    	// para mostrar los elementos del array de nombres por consola
+    	// Variante #1. Imprimer cada elemento del array, utilizando una funcion println.
+    	System.out.println(nombres[0]);
+    	System.out.println(nombres[1]);
+    	System.out.println(nombres[2]);
+    	
+    	// como se puede apreciar la variante #1 no sirve para nada.
+    	
+    	// Variante #2. 
+    	// Implica utilizar una sentencia de control de flujo para recorrer el Array.
+    	// y lo veremos en la rama "sentenciasDeControlDeFlujo"
+    	
     }
 }
 
