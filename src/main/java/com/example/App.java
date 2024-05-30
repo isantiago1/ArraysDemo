@@ -1,9 +1,5 @@
 package com.example;
 
-/**
- * Hello world!
- *
- */
 public class App {
 	public static void main(String[] args) {
 
@@ -18,12 +14,34 @@ public class App {
 		// para mostrar los elementos del array de nombres por consola
 		// Variante #1. Imprimer cada elemento del array, utilizando una funcion
 		// println.
+		System.out.println("Mostrar Array uno a uno");
 		System.out.println(nombres[0]);
 		System.out.println(nombres[1]);
 		System.out.println(nombres[2]);
 
 		// como se puede apreciar la variante #1 no sirve para nada.
 
+		// Manejo de los argumentos que recibe el metodo main, es decir, la app
+		// cuando se ejecuta.
+		// Porque la App cuando se ejecuta recibe como parametros un array de
+		// argumentos de tipo String (String[] args)
+		// ¿Donde se especifica los argumentos que recibe la App en el IDE Eclipse?
+		// Respuesta: en la configuracion de las opciones de ejecucion
+		System.out.println("------------");
+		// Primero hay que comprobar si la App esta recibiendo los argumentos esperados
+		if (args.length == 0 ) {
+			System.out.println("No se han recibio los argumentos esperados");
+		} else if (args.length != 3) {
+			System.out.println("No se han recibido 3 argumentos");
+		} else {
+			// Mostraro manejar los argumentos recibidos.
+			System.out.println("Se han recibido los siguientes argumentos");
+			for(String argumento :args)
+				System.out.println(argumento);
+		}
+			
+			
+		System.out.println("------------");
 		// Variante #2.
 		// Implica utilizar una sentencia de control de flujo para recorrer el Array.
 		// y lo veremos en la rama "sentenciasDeControlDeFlujo"
